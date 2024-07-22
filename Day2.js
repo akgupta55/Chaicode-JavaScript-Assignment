@@ -190,3 +190,58 @@ const object22 = {
 
 console.log(object11 === object22); // false
 console.log(object11 === object22); // true
+
+// ---------------------------------------- Activity  4: Logical Operators ------------------------------------------------
+
+console.log("----------------------------------------");
+
+//The logical AND (&&) (logical conjunction) operator for a set of boolean operands will be true if and only if all the operands are true. Otherwise it will be false.
+// More generally, the operator returns the value of the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.
+
+const aa = 3;
+const bb = -2;
+
+console.log(aa > 0 && bb > 0);
+
+//The logical OR (||) (logical disjunction) operator for a set of operands is true if and only if one or more of its operands is true.
+//It is typically used with boolean (logical) values. When it is, it returns a Boolean value.
+//However, the || operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.
+
+console.log("----------------------------------------");
+
+const aaa = 3;
+const bbb = -2;
+
+console.log(aaa > 0 || bbb > 0);
+// Expected output: true
+
+// The logical NOT (!) (logical complement, negation) operator takes truth to falsity and vice versa.
+// It is typically used with boolean (logical) values.
+// When used with non-Boolean values, it returns false if its single operand can be converted to true; otherwise, returns true.
+
+const ax = 3;
+const bx = -2;
+
+console.log(!(ax > 0 || bx > 0));
+
+// ---------------------------------------- Activity 5: Ternary Operator ------------------------------------------------
+
+// Conditional (ternary) operator
+// The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?),
+// then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy.
+// This operator is frequently used as an alternative to an if...else statement.
+
+console.log("----------------------------------------");
+
+function getFee(isMember) {
+  return isMember ? "$2.00" : "$10.00";
+}
+
+console.log(getFee(true));
+// Expected output: "$2.00"
+
+console.log(getFee(false));
+// Expected output: "$10.00"
+
+console.log(getFee(null));
+// Expected output: "$10.00"
