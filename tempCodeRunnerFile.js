@@ -1,1 +1,0 @@
-percentage >= 80
